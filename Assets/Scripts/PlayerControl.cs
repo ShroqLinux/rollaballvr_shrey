@@ -9,10 +9,13 @@ public class PlayerControl : MonoBehaviour
     public float speed;
     public bool keyboard;
 
+    public int score;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        score = 0;
     }
 
     void OnMove(InputValue movementValue)
@@ -27,6 +30,12 @@ public class PlayerControl : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
+            score += 5;
+        }
+        if (other.gameObject.CompareTag("Pick Up Lose"))
+        {
+            other.gameObject.SetActive(false);
+            score -= 5;
         }
     }
 

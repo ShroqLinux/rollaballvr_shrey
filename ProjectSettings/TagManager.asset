@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Pick Up
+  - Pick Up Lose
   layers:
   - Default
   - TransparentFX
