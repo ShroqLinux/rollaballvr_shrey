@@ -6,6 +6,8 @@ public class FlyJoystick : MonoBehaviour
     public float speed;
     public float speedAmplifier;
     public float rotationSpeed;
+
+    public GameObject spotLight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,5 +42,12 @@ public class FlyJoystick : MonoBehaviour
         // Debug.Log("Roll: " + roll + "Pitch: " + pitch + "Yaw: " + yaw + "Throttle: " + throttle);
 
         this.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+        if (Joystick.current.trigger.wasPressedThisFrame)
+        {
+            Debug.Log("Trigger pressed");
+            bool currentState = spotLight.activeSelf;
+            spotLight.SetActive(!currentState);
+        }
     }
 }
