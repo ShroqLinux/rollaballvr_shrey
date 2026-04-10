@@ -10,6 +10,7 @@ public class DisplayFlightData : MonoBehaviour
     public float warningHeight;
     public GameObject warnImage;
     private FlyJoystick flyJoystick;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
