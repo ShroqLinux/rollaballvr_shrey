@@ -46,8 +46,7 @@ public class FlyJoystick : MonoBehaviour
         if (Joystick.current.trigger.wasPressedThisFrame)
         {
             Debug.Log("Trigger pressed");
-            bool currentState = spotLight.activeSelf;
-            spotLight.SetActive(!currentState);
+            
         }
     }
 }
