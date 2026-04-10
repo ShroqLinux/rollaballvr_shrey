@@ -30,10 +30,12 @@ public class DisplayFlightData : MonoBehaviour
         if (height > warningHeight) 
         {
             warnImage.SetActive(false);
+            textHeight.color = Color.white;
         }
         else
         {
             warnImage.SetActive(true);
+            textHeight.color = Color.red;
         }
 
         Debug.Log("Player alt: " + player.transform.position.y);
