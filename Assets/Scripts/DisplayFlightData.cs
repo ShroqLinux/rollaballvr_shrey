@@ -24,7 +24,7 @@ public class DisplayFlightData : MonoBehaviour
         string displayHeight = "Alt: " + height.ToString("F2") + "m";
         textHeight.text = displayHeight;
 
-        float speed = flyJoystick.speed;
+        float speed = flyJoystick.speed * 1.5f;
         string displaySpeed = "Speed: " + speed.ToString() + "km/h";
         textSpeed.text = displaySpeed;
 
