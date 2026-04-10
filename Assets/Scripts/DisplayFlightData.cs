@@ -13,27 +13,29 @@ public class DisplayFlightData : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        flyJoystick = GetComponent<FlyJoystick>();
+        flyJoystick = player.GetComponent<FlyJoystick>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float height = player.transform.position.y;
-        string displayHeight = "Alt: " + height.ToString() + "m";
+        string displayHeight = "Alt: " + height.ToString("F2") + "m";
         textHeight.text = displayHeight;
 
         float speed = flyJoystick.speed;
         string displaySpeed = "Speed: " + speed.ToString() + "km/h";
         textSpeed.text = displaySpeed;
 
-        if (player.transform.position.y < warningHeight) 
-        {
-            warnImage.SetActive(true);
-        }
-        else
+        if (height > warningHeight) 
         {
             warnImage.SetActive(false);
         }
+        else
+        {
+            warnImage.SetActive(true);
+        }
+
+        Debug.Log("Player alt: " + player.transform.position.y);
     }
 }

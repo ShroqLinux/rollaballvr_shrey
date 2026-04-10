@@ -37,7 +37,7 @@ public class FlyJoystick : MonoBehaviour
 
         speed += throttle;
 
-        Debug.Log("Roll: " + roll + "Pitch: " + pitch + "Yaw: " + yaw + "Throttle: " + throttle);
+        // Debug.Log("Roll: " + roll + "Pitch: " + pitch + "Yaw: " + yaw + "Throttle: " + throttle);
 
         this.transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }

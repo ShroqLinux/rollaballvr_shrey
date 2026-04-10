@@ -753,8 +753,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397069184}
   m_LocalRotation: {x: 0.14050676, y: -0.5313198, z: 0.080553174, w: 0.83154577}
-  m_LocalPosition: {x: 0, y: 0, z: 2.2193}
-  m_LocalScale: {x: 0.00039245075, y: 0.00032265836, z: 1.0088}
+  m_LocalPosition: {x: 0, y: 0, z: 2.2548}
+  m_LocalScale: {x: 0.00080526964, y: 0.0005419047, z: 1.0088}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 735069863}
@@ -762,7 +762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 18.619, y: -65.306, z: -0.928}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.7209, y: 0.0654}
+  m_AnchoredPosition: {x: -1.7676, y: -0.1013}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &397069186
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -45.692795, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1586,7 +1586,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735069862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1597,7 +1597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.29999924, y: 31.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735069864
@@ -2795,7 +2795,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -74.63312, w: 0}
+  m_margin: {x: 0, y: 0, z: -144.05345, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3687,8 +3687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 0
-  speedAmplifier: 4
-  rotationSpeed: 0.2
+  speedAmplifier: 5
+  rotationSpeed: 0.8
 --- !u!1 &1598269138
 GameObject:
   m_ObjectHideFlags: 0
