@@ -9,6 +9,7 @@ public class ButtonFollowVisual : MonoBehaviour
     public Vector3 localAxis;
     public float resetSpeed = 5;
     public float followAngleTreshold = 45;
+    public AudioClip click;
 
     private bool freeze = false;
 
@@ -23,6 +24,7 @@ public class ButtonFollowVisual : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         initialLocalPos = visualTarget.localPosition;
 
         interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
@@ -67,6 +69,11 @@ public class ButtonFollowVisual : MonoBehaviour
         }
     }
 
+    public void ClickSound()
+    {
+        Debug.Log("Click sound called");
+        AudioSource.PlayClipAtPoint(click, transform.position, 1);
+    }
 
 
     // Update is called once per frame
