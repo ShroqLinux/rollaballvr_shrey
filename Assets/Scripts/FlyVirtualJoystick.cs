@@ -8,6 +8,7 @@ public class FlyVirtualJoystick : MonoBehaviour
     public float speedAmplifier;
     public float rotationSpeed;
     public XRJoystick joystick;
+    public XRSlider throttleSlider;
 
     public GameObject spotLight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,9 +35,9 @@ public class FlyVirtualJoystick : MonoBehaviour
 
         this.transform.Rotate(pitch, 0, roll);
 
-        InputControl slider = Joystick.current.allControls[15];
-        float throttle = (float)slider.ReadValueAsObject();
-        throttle = -throttle * speedAmplifier * Time.deltaTime;
+        Debug.Log("Slider value: " + throttleSlider.value);
+        float throttle = throttleSlider.value;
+        throttle = throttle * speedAmplifier * Time.deltaTime;
 
         speed += throttle;
 
